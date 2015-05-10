@@ -1,5 +1,5 @@
 class ntp (
-   $ntpservers = $ntp::params::ntpservers, 
+   $ntpservers = hiera(ntp::ntpservers),
    $restrict4 = $ntp::params::restrict4,
    $restrict6 = $ntp::params::restrict6,
    $is_server = $ntp::params::is_server,
