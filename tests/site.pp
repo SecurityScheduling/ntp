@@ -1,1 +1,3 @@
-include ntp
+class {'ntp':
+    is_server => false,
+}
